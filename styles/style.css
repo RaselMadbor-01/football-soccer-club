@@ -106,6 +106,27 @@ body {
   line-height: 26px;
 }
 
+/*-------------------------- 
+                    highlight-section
+    -----------------------------------------*/
+
+.highlight-container {
+  padding-top: 165px;
+}
+.highlight-info {
+  width: 469px;
+}
+.highlight-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+}
+.highlight-detail {
+  line-height: 28px;
+  color: #6c6c6c;
+}
+
 /*----------------------------------
                        latest-news-section
        ------------------------------------------------*/
@@ -164,27 +185,6 @@ body {
   cursor: pointer;
   color: #fff;
   margin: auto;
-}
-
-/*-------------------------- 
-                    highlight-section
-    -----------------------------------------*/
-
-.highlight-container {
-  padding-top: 165px;
-}
-.highlight-info {
-  width: 469px;
-}
-.highlight-title {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 60px;
-  color: #0a0826;
-}
-.highlight-detail {
-  line-height: 28px;
-  color: #6c6c6c;
 }
 
 /*---------------------------------
@@ -268,6 +268,28 @@ footer p {
     font-size: 16px;
   }
 
+  /* highlight-section */
+
+  .highlight-container {
+    padding: 0;
+  }
+  .highlight-info {
+    width: 90%;
+    padding: 0 15px;
+  }
+  .highlight-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #0a0826;
+    margin: 0;
+  }
+  .highlight-detail {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6c6c6c;
+  }
+
   /* latest-section */
 
   .latest-news-section {
@@ -295,28 +317,6 @@ footer p {
     height: 100%;
   }
 
-  /* highlight-section */
-
-  .highlight-container {
-    padding: 0;
-  }
-  .highlight-info {
-    width: 90%;
-    padding: 0 15px;
-  }
-  .highlight-title {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 60px;
-    color: #0a0826;
-    margin: 0;
-  }
-  .highlight-detail {
-    font-size: 16px;
-    line-height: 28px;
-    color: #6c6c6c;
-  }
-
   /* footer-section*/
 
   .footer-container {
@@ -333,5 +333,123 @@ footer p {
     font-size: 16px;
     padding-top: 29px;
     padding-bottom: 30px;
+  }
+}
+
+/*---------------------
+            Tablet-Devices
+        -------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* banner-section */
+
+  .banner-container {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .top-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-title {
+    font-size: 64px;
+    color: #fff;
+    width: 485px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .banner img {
+    width: 100%;
+    padding: 50px 16px;
+  }
+
+  /* blog-section */
+
+  .blog-container {
+    padding: 60px 15px;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    padding: 0 15px;
+    justify-items: center;
+  }
+  .blog {
+    width: 100%;
+    padding: 15px;
+  }
+  .thumbnail img {
+    width: 100%;
+  }
+  .blog-detail {
+    font-size: 16px;
+  }
+
+  /* highlight-section */
+
+  .highlight-container {
+    padding-top: 165px;
+  }
+  .highlight-info {
+    width: 70%;
+    padding: 0 15px;
+  }
+  .highlight-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #0a0826;
+    margin: 0;
+  }
+  .highlight-detail {
+    font-size: 28px;
+    line-height: 28px;
+    color: #6c6c6c;
+  }
+  #highlight-banner {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  /* latest-section */
+
+  .latest-news-section {
+    padding-top: 0;
+  }
+  .news-title {
+    text-align: center;
+    color: #2d25a0;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 15px;
+    padding: 0 15px;
+  }
+  .new-details {
+    width: 90%;
+  }
+  .cover-photo {
+    height: 100%;
+  }
+  .cover-photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* footer-section*/
+
+  .footer-container {
+    padding-top: 158px;
+    padding-bottom: 63px;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .social-icon i {
+    padding: 5px 0;
   }
 }
