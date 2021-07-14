@@ -43,6 +43,38 @@ body {
   font-weight: 600;
 }
 
+/*----------------
+            header-section 
+     -----------------------------*/
+
+header {
+  display: flex;
+  height: 44px;
+  background: #2d25a0;
+  padding: 50px 0;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 6px 36px;
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: #fff;
+  color: #2d25a0;
+}
+#log-in-btn {
+  margin: auto;
+  width: 123px;
+  margin-right: 50px;
+}
+
 /*-------------------------------------
                         banner-section
     ------------------------------------------------*/
@@ -223,6 +255,10 @@ footer p {
          ----------------------*/
 
 @media only screen and (max-width: 688px) {
+  /* header-section */
+  header {
+    display: none;
+  }
   /* banner-section */
 
   .banner-container {
@@ -340,6 +376,10 @@ footer p {
             Tablet-Devices
         -------------------*/
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* header-section */
+  header {
+    display: none;
+  }
   /* banner-section */
 
   .banner-container {
