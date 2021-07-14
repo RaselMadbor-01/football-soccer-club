@@ -44,7 +44,7 @@ body {
 }
 
 /*-------------------------------------
-                        top banner 
+                        banner-section
     ------------------------------------------------*/
 
 .banner-container {
@@ -71,7 +71,7 @@ body {
 }
 
 /*---------------------------------- 
-                        blog 
+                        blog-section
    -------------------------------------------*/
 .blog-container {
   padding: 50px 100px;
@@ -107,7 +107,7 @@ body {
 }
 
 /*----------------------------------
-                       latest-news 
+                       latest-news-section
        ------------------------------------------------*/
 
 .latest-news-section {
@@ -167,7 +167,7 @@ body {
 }
 
 /*-------------------------- 
-                    highlight
+                    highlight-section
     -----------------------------------------*/
 
 .highlight-container {
@@ -188,7 +188,7 @@ body {
 }
 
 /*---------------------------------
-                          footer 
+                          footer-section 
    ----------------------------------------------*/
 
 .footer-container {
@@ -211,5 +211,127 @@ body {
   font-size: 16px;
 }
 footer p {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+/*--------------------------- 
+                    Media Queries 
+                    ------------------------------*/
+
+/* -------------------
+         Mobile Devices 
+         ----------------------*/
+
+@media only screen and (max-width: 688px) {
+  /* banner-section */
+
+  .banner-container {
+    padding: 0;
+    padding-top: 100px;
+  }
+  .top-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-title {
+    font-size: 36px;
+    color: #fff;
+    width: 278px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .banner img {
+    width: 90%;
+    padding: 50px 16px;
+  }
+
+  /* blog-section */
+
+  .blog-container {
+    padding: 60px 15px;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px;
+    padding: 0 15px;
+    justify-items: center;
+  }
+  .blog {
+    width: 100%;
+    padding: 15px;
+  }
+  .thumbnail img {
+    width: 100%;
+  }
+  .blog-detail {
+    font-size: 16px;
+  }
+
+  /* latest-section */
+
+  .latest-news-section {
+    padding-top: 0;
+  }
+  .news-title {
+    text-align: center;
+    color: #2d25a0;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .news {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+    padding: 0 15px;
+  }
+  .new-details {
+    width: 90%;
+  }
+  .cover-photo {
+    height: 100%;
+  }
+  .cover-photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* highlight-section */
+
+  .highlight-container {
+    padding: 0;
+  }
+  .highlight-info {
+    width: 90%;
+    padding: 0 15px;
+  }
+  .highlight-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #0a0826;
+    margin: 0;
+  }
+  .highlight-detail {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6c6c6c;
+  }
+
+  /* footer-section*/
+
+  .footer-container {
+    padding-top: 43px;
+    padding-bottom: 187px;
+  }
+  .footer-logo img {
+    width: 75%;
+    padding-left: 18px;
+    padding-right: 70px;
+  }
+
+  .social-icon i {
+    font-size: 16px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
 }
