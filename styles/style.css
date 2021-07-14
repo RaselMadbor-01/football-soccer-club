@@ -1,0 +1,215 @@
+/*---------------------
+               fonts 
+         -------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*------------------------------------
+              common styles or utilities 
+    -------------------------------------*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.link-btn {
+  width: 168px;
+  padding: 10px 24px;
+  background: #e02c6d;
+  cursor: pointer;
+  text-align: center;
+}
+.link-btn:hover {
+  background-color: #fff;
+  color: #e02c6d;
+}
+.link-btn a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.link-btn:hover a {
+  color: #e02c6d;
+}
+#highlight-btn:hover {
+  background-color: #2d25a0;
+}
+#highlight-btn:hover a {
+  color: #fff;
+}
+.fa,
+.fas {
+  font-weight: 600;
+}
+
+/*-------------------------------------
+                        top banner 
+    ------------------------------------------------*/
+
+.banner-container {
+  width: 100%;
+  background: #2d25a0;
+  padding: 50px 0;
+}
+.top-banner {
+  display: flex;
+  justify-content: space-around;
+}
+.banner-title {
+  font-size: 64px;
+  color: #fff;
+  width: 485px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.banner {
+  transition: transform 1s ease-in-out;
+}
+.banner-container:hover .banner {
+  transform: scale(0.9, 0.9) rotate(45deg);
+}
+
+/*---------------------------------- 
+                        blog 
+   -------------------------------------------*/
+.blog-container {
+  padding: 50px 100px;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  justify-content: center;
+}
+.blog {
+  width: 330px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.thumbnail img {
+  width: 100%;
+}
+.blog-author {
+  font-size: 28px;
+  color: #18191f;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.blog-detail {
+  color: #6c6c6c;
+  left: calc(50% - 300px / 2);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+
+/*----------------------------------
+                       latest-news 
+       ------------------------------------------------*/
+
+.latest-news-section {
+  padding-top: 150px;
+}
+.news-title {
+  margin-bottom: 80px;
+  text-align: center;
+  color: #2d25a0;
+  font-size: 50px;
+}
+.news {
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-row-gap: 100px;
+  justify-items: center;
+}
+.new-details {
+  width: 380px;
+  height: 253px;
+  position: relative;
+  box-shadow: 3px 4px 14px 10px grey;
+}
+.new-info {
+  display: none;
+}
+.new-details:hover .new-info {
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #2d25a081;
+}
+.new-info p {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+  text-align: center;
+}
+.new-info button {
+  border: none;
+  padding: 10px 30px;
+  width: 168px;
+  padding: 10px 24px;
+  background: #e02c6d;
+  cursor: pointer;
+  color: #fff;
+  margin: auto;
+}
+
+/*-------------------------- 
+                    highlight
+    -----------------------------------------*/
+
+.highlight-container {
+  padding-top: 165px;
+}
+.highlight-info {
+  width: 469px;
+}
+.highlight-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+}
+.highlight-detail {
+  line-height: 28px;
+  color: #6c6c6c;
+}
+
+/*---------------------------------
+                          footer 
+   ----------------------------------------------*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 158px;
+  padding-bottom: 63px;
+}
+.social-icon a {
+  width: 32px;
+  height: 32px;
+  background: lightgray;
+  border-radius: 16px;
+  color: gray;
+  margin-left: 14px;
+  padding: 5px;
+}
+.social-icon i {
+  font-size: 16px;
+}
+footer p {
+  font-size: 16px;
+}
